@@ -1,104 +1,31 @@
 ---
-// Component Imports
-// import Tour from '../components/Tour.astro';
-// You can import components from any supported Framework here!
-
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
 let title = 'FrontPage';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{title}</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<style global>
+			@import "../styles/global.css";
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<div>
+					<h1>Welcome to My Site</h1>
+				</div>
+			</header>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-	</style>
-
-	<style>
-
-		body {
-			background-color: black;
-		}
-		/* header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		} */
-
-		button {
-			border: 3px solid;
-			border-radius: 50%;
-			width: 195px;
-			height: 195px;
-			background-color: gold;
-			font-size: 1.5em;
-		}
-
-		a {
-			margin: 10px;
-
-		}
-
-		.bar {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			flex-wrap: wrap;
-
-			
-		}
-
-		.foo {
-			max-width: 200px;
-			min-width: 70px;
-		} 
-
-		@media screen and (max-width: 412px) {
-			img {
-				width: 125px;
-			}
-		}
-
-		@media screen and (max-width: 412px) {
-			button {
-				width: 125px;
-				height: 125px;
-			}
-		}
-
-		h1 {
-			color: white;
-			margin-bottom: 2em;
-		}
-	</style>
-</head>
-<body>
-	<main>
-		<header>
-			<div>
-				<!-- <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo"> -->
-				<h1>Welcome to My Site</h1>
+			<div class="bar">
+				<a href="https://joettevisitsvelte.pages.dev/" ><img class="foo" src="/assets/circalthumb/circalAvatar2.webp" alt="fuckit" /></a>
+				<a href="https://astro-5pm.pages.dev//" ><img class="foo" src="/assets/circalthumb/d1CThumb.webp" alt="fuckit" /></a>
+				<a href="https://tobisvelte.pages.dev" ><img class="foo" src="/assets/circalthumb/p4CThumb2.webp" alt="fuckit" /></a>
+				<a href="https://texastripsvelte.pages.dev/" ><img class="foo" src="/assets/circalthumb/TexasTripCThumb.webp" alt="fuckit" /></a>
+				<a class="boo" href="https://tripvids2.pages.dev/"><button>Video</button></a>
 			</div>
-		</header>
-
-		<div class="bar">
-			<a href="https://joettevisitsvelte.pages.dev/" ><img class="foo" src="/assets/circalthumb/circalAvatar2.webp" alt="fuckit" /></a>
-			<a href="https://astro-5pm.pages.dev//" ><img class="foo" src="/assets/circalthumb/d1CThumb.webp" alt="fuckit" /></a>
-			<a href="https://tobisvelte.pages.dev" ><img class="foo" src="/assets/circalthumb/p4CThumb2.webp" alt="fuckit" /></a>
-			<a href="https://texastripsvelte.pages.dev/" ><img class="foo" src="/assets/circalthumb/TexasTripCThumb.webp" alt="fuckit" /></a>
-			<a class="boo" href="https://tripvids2.pages.dev/"><button>Video</button></a>
-		</div>
-	</main>
-</body>
+		</main>
+	</body>
 </html>
